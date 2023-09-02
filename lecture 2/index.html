@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YouTube: Home</title>
     <meta
       name="description"
       content="Share your videos with friends, family, and the world."
     />
+    <title>YouTube: Home</title>
+
     <style>
       .image {
         width: 400px;
         height: 400px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      tr:nth-child(even) {
+        background-color: #ddd;
       }
     </style>
   </head>
@@ -21,8 +35,8 @@
     <!-- Emphasized text / italic -->
     <h3><em>Emphasized text / italic Paragraph</em></h3>
     <p>
-      <em
-        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, modi?</em
+      <em>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, modi?</em
       >
     </p>
     <!-- Normal Paragraph -->
@@ -39,7 +53,8 @@
 
     <!-- <i> and <b> tag -->
     <p>
-      <i>Lorem ipsum dolor</i> sit amet <b>consectetur adipisicing elit.</b>
+      <i>Lorem ipsum dolor</i> sit amet
+      <b>consectetur adipisicing elit.</b>
       Voluptate, eligendi!
     </p>
 
@@ -52,7 +67,7 @@
     <h6>Heading 6</h6>
 
     <!-- Entities for using symbols in html -->
-    &lt; &gt; &nbsp;&nbsp;&nbsp;&nbsp;&copy;
+    &lt; &gt; &pound; &nbsp; &copy;
 
     <!-- Anchor Element -->
 
@@ -74,7 +89,7 @@
     <a href="/contact.html">Contact Us</a>
 
     <!-- Downloading file through link -->
-    <a href="./images/bg.jpg" download="download">Download Image</a>
+    <a href="./images/bg.jpg" download>Download Image</a>
 
     <!-- Absolute and Relative URL/Path -->
 
@@ -85,5 +100,69 @@
       src="https://images.pexels.com/photos/12448681/pexels-photo-12448681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt="Mountains in a sea"
     />
+
+    <!-- Video -->
+
+    <video src="./videos/uncharted4.mp4" controls></video>
+
+    <video autoplay muted loop>
+      <source src="./videos/uncharted4.webm" type="video/webm" />
+      <source src="./videos/uncharted4.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Audio -->
+    <audio src="./audios/sample.mp3" controls></audio>
+
+    <audio controls>
+      <source src="./audios/sample.mp3" />
+    </audio>
+
+    <!-- List -->
+
+    <!-- Ordered List -->
+    <ol>
+      <li>Mango</li>
+      <li>Orange</li>
+      <li>Banana</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <!-- Description List -->
+    <dl>
+      <dt>Cat</dt>
+      <dd>This is a cat.</dd>
+      <dt>Dog</dt>
+      <dd>This is a dog.</dd>
+    </dl>
+
+    <!-- Table -->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Phone No</th>
+        <th>Address</th>
+      </tr>
+      <tr>
+        <td>Ali Haider</td>
+        <td>03088866846</td>
+        <td>CMH Road, Jhelum Cantt</td>
+      </tr>
+      <tr>
+        <td>Faraz</td>
+        <td>03401155831</td>
+        <td>Jada Jhelum</td>
+      </tr>
+      <tr>
+        <td>Ahmed</td>
+        <td>03455705065</td>
+        <td>Jada Jhelum</td>
+      </tr>
+    </table>
   </body>
 </html>

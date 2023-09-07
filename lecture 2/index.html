@@ -10,6 +10,9 @@
     <title>YouTube: Home</title>
 
     <style>
+      body {
+        margin: 0;
+      }
       .image {
         width: 400px;
         height: 400px;
@@ -26,6 +29,29 @@
       }
       tr:nth-child(even) {
         background-color: #ddd;
+      }
+      .container {
+        background-color: gold;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        padding: 10px; /* Short hand property for padding */
+        border: 10px solid black; /* Short hand property for border */
+        border-width: 5px;
+        border-style: dotted;
+        border-color: blue;
+        margin: 10px;
+        margin-top: 40px;
+        /* border-radius: 20px; */
+      }
+      .word {
+        color: blue;
+        font-size: 30px;
+        font-weight: bold;
+        height: 100px;
+        width: 500px;
+        background-color: gold;
       }
     </style>
   </head>
@@ -164,5 +190,40 @@
         <td>Jada Jhelum</td>
       </tr>
     </table>
+
+    <!-- Block Level Elements and Inline Elements -->
+    <!-- Block Level Elements -->
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <!-- Block Level -->
+    <!-- Box Model -->
+    <div class="container">
+      <h2>Heading</h2>
+      <p>text</p>
+    </div>
+
+    <!-- Inline Level Elements -->
+    <p>
+      Lorem ipsum dolor sit amet
+      <span class="word">consectetur adipisicing elit.</span> Excepturi, beatae.
+    </p>
+
+    <!-- Semantic Elements -->
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <aside></aside>
+      <article>
+        <section></section>
+        <section></section>
+        <section></section>
+      </article>
+    </main>
+    <footer>Footer</footer>
   </body>
 </html>

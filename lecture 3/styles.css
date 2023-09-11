@@ -1,0 +1,64 @@
+/* External Styles */
+
+p {
+  color: yellow;
+  font-size: 30px;
+}
+
+nav {
+  font-family: sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: red;
+}
+
+div #btn {
+}
+
+.section .para {
+  background-color: red;
+}
+
+.para#paragraph1 {
+  background-color: gold;
+}
+a[href="https://www.youtube.com"]
+{
+  background-color: red;
+}
+/* a[href*="google"] {
+  background-color: gold;
+} */
+
+img[src*="dog"] {
+}
+
+/* a[href$=".com"] {
+  background-color: blue;
+} */
+
+a[href^="https"] {
+  background-color: brown;
+}
+
+#products {
+  background-color: aquamarine;
+}
+
+#product {
+  background-color: beige;
+}
+
+#products ~ p {
+  background-color: blue;
+}

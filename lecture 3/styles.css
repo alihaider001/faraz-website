@@ -1,7 +1,7 @@
 /* External Styles */
 
 p {
-  color: yellow;
+  color: black;
   font-size: 30px;
 }
 
@@ -61,4 +61,33 @@ a[href^="https"] {
 
 #products ~ p {
   background-color: blue;
+}
+
+/* Pseudo Class Selectors */
+.article p:last-of-type {
+  background-color: red;
+  font-size: 50px;
+}
+
+/* Pseudo Element Selectors */
+
+*::selection {
+  background-color: red;
+  color: black;
+}
+
+#article-para1 {
+  color: black;
+}
+
+#article-para1::first-letter {
+  color: black;
+  font-size: 40px;
+}
+
+#article-para1::after {
+  content: "Read this -";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
 }

@@ -1,0 +1,43 @@
+.box {
+  background-color: gold;
+  padding: 10px;
+  border: 2px solid red;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-style: dashed;
+  margin: 10px;
+  width: fit-content;
+}
+
+.box-2 {
+  /* margin-top: 20px; */
+}
+
+p {
+  padding: 0px;
+  margin: 0;
+}
+
+.paragraphs {
+  margin-top: 50px;
+}
+
+.paragraphs p {
+  margin: 10px 0;
+}
+
+span {
+  background-color: gold;
+  display: inline-block;
+  width: 20%;
+}
+
+.sample-box {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  margin-top: 10px;
+  border: 5px solid red;
+  padding: 20px;
+  box-sizing: border-box;
+}

@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 .box {
   background-color: gold;
   padding: 10px;
@@ -38,6 +42,105 @@ span {
   background-color: gold;
   margin-top: 10px;
   border: 5px solid red;
-  padding: 20px;
+  padding: 50px;
   box-sizing: border-box;
+}
+
+.btn {
+  background-color: dodgerblue;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  border: 2px solid red;
+}
+
+.overflow-box {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  overflow: auto;
+}
+
+.measuring-box-1 {
+  width: 150px;
+  height: 10cm;
+  background-color: gold;
+  margin: 10px 0;
+}
+.measuring-box-container {
+  background-color: red;
+  border: 5px solid red;
+  height: 30vh;
+  width: 50%;
+}
+.measuring-box-2 {
+  width: 100vw;
+  height: 100px;
+  background-color: gold;
+}
+.measuring-box-3-container {
+  font-size: 20px;
+}
+.measuring-box-3 {
+  width: 60rem;
+  height: 30rem;
+  background-color: gold;
+  /* 2 x font-size of root element */
+  font-size: 3.6rem;
+
+  /* 2 x font-size of parent element */
+  /* font-size: 3em;  */
+}
+
+.rect-container {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  background-color: dodgerblue;
+  left: 50px;
+}
+
+.rect {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  z-index: -1;
+
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.sticky-rect {
+  width: 50vw;
+  height: 20vh;
+  background-color: red;
+  position: sticky;
+  top: 0;
+}
+
+.empty {
+  height: 100vh;
+}
+
+.section img {
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+.section p {
+  font-size: 40px;
+  /* clear: right; */
 }
